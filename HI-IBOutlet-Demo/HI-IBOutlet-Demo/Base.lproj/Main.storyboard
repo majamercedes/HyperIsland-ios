@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -37,18 +37,18 @@
                                 <rect key="frame" x="24" y="90" width="272" height="272"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNN-4F-bFm" userLabel="Top Square">
-                                        <rect key="frame" x="90" y="0.0" width="91" height="90.5"/>
+                                        <rect key="frame" x="90" y="0.0" width="91" height="91"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VNN-4F-bFm" secondAttribute="height" multiplier="1:1" id="KGp-G3-PmX"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bsm-u0-Niz" userLabel="Left V space">
-                                        <rect key="frame" x="0.0" y="90" width="45.5" height="182"/>
+                                        <rect key="frame" x="0.0" y="90" width="46" height="182"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-M6-BiC" userLabel="Right V space">
-                                        <rect key="frame" x="227" y="90" width="45.5" height="182"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-M6-BiC" userLabel="Right V space">
+                                        <rect key="frame" x="227" y="90" width="46" height="182"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tex-kE-Pzo" userLabel="Left H space">
@@ -92,7 +92,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-if-laf">
-                                <rect key="frame" x="24" y="386" width="272" height="20.5"/>
+                                <rect key="frame" x="24" y="386" width="272" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -111,6 +111,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CurrentColor" destination="DgU-if-laf" id="0pE-fu-Y4N"/>
                         <outlet property="awesomeView" destination="voF-8C-PZU" id="nvu-DN-pAZ"/>
                         <outlet property="changeButtonColor" destination="Khr-LL-SPL" id="s1W-Co-u5i"/>
                     </connections>
